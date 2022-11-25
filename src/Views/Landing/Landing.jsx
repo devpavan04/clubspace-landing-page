@@ -13,8 +13,8 @@ const Landing = () => {
     Lottie.loadAnimation({
       container: container.current,
       renderer: 'svg',
-      loop: true,
-      autoplay: true,
+      loop: false,
+      autoplay: false,
       animationData: require('../../assets/banner.json'),
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice',
@@ -49,7 +49,9 @@ const Landing = () => {
           <i className='fa-solid fa-xmark drawer-close-icon' onClick={showDrawerHandler}></i>
           <div className='drawer-menu-items'>
             <a href='#features'>Features</a>
+            <hr />
             <a href='#pricing'>Pricing</a>
+            <hr />
           </div>
         </div>
       ) : null}
@@ -60,6 +62,19 @@ const Landing = () => {
           <p className='hero-title'>The Ultimate Club Management App</p>
           <button className='hero-btn'>Let's Talk</button>
           <img src={application} alt='Clubspace Application' className='hero-image' />
+        </div>
+      </div>
+
+      <div className='features'>
+        <p className='features-title'>Why Clubspace?</p>
+        <div className='feature-card'>
+          <FeatureCard type='create' padding='0' width='100%' height='auto' />
+        </div>
+        <div className='feature-card'>
+          <FeatureCard type='join' padding='0' width='100%' height='auto' />
+        </div>
+        <div className='feature-card'>
+          <FeatureCard type='engagement' padding='0' width='100%' height='auto' />
         </div>
       </div>
     </div>
