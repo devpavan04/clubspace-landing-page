@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/clubspace-landing-page/static/css/main.8cfa1690.css",
+    "main.js": "/clubspace-landing-page/static/js/main.a0ea438b.js",
+    "static/media/application.png": "/clubspace-landing-page/static/media/application.8c14479cdf43808dcde7.png",
+    "static/media/logo-rectangle.png": "/clubspace-landing-page/static/media/logo-rectangle.978e4d0debd501c95904.png",
+    "static/media/create-feature.svg": "/clubspace-landing-page/static/media/create-feature.5abf76cb75670480c1bd9967c82e30fe.svg",
+    "static/media/engagement-feature.svg": "/clubspace-landing-page/static/media/engagement-feature.60f30be23353418b723cf9978c23bcb3.svg",
+    "static/media/join-feature.svg": "/clubspace-landing-page/static/media/join-feature.8e86bb0e9f1251304e43c5bc404fe2b2.svg",
+    "index.html": "/clubspace-landing-page/index.html",
+    "main.8cfa1690.css.map": "/clubspace-landing-page/static/css/main.8cfa1690.css.map",
+    "main.a0ea438b.js.map": "/clubspace-landing-page/static/js/main.a0ea438b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cfa1690.css",
+    "static/js/main.a0ea438b.js"
+  ]
+}
