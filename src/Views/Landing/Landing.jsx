@@ -6,6 +6,7 @@ import './landing.css';
 
 const Landing = () => {
   const [showDrawer, setShowDrawer] = useState(false);
+  const [toggleIsOn, setToggleIsOn] = useState(false);
 
   const container = useRef(null);
 
@@ -30,6 +31,10 @@ const Landing = () => {
 
   const showDrawerHandler = () => {
     setShowDrawer((prevState) => !prevState);
+  };
+
+  const setToggleIsOnHandler = () => {
+    setToggleIsOn((prevState) => !prevState);
   };
 
   return (
@@ -65,18 +70,61 @@ const Landing = () => {
         </div>
       </div>
 
-      <div className='features'>
+      <div></div>
+
+      <div className='features' id='features'>
         <p className='features-title'>Why Clubspace?</p>
         <div className='feature-card'>
-          <FeatureCard type='create' padding='0' width='100%' height='auto' />
+          <FeatureCard type='create' padding='1rem' width='300px' height='auto' />
         </div>
         <div className='feature-card'>
-          <FeatureCard type='join' padding='0' width='100%' height='auto' />
+          <FeatureCard type='join' padding='1rem' width='300px' height='auto' />
         </div>
         <div className='feature-card'>
-          <FeatureCard type='engagement' padding='0' width='100%' height='auto' />
+          <FeatureCard type='engagement' padding='1rem' width='300px' height='auto' />
         </div>
       </div>
+
+      {/* <div className='pricing' id="pricing">
+        <div className='pricing-title-group'>
+          <p className='pricing-title'>We’ve got a pricing plan for everyone</p>
+          <p className='pricing-subtitle'>We believe clubspace should be available to all, no matter the size </p>
+        </div>
+
+        <div className='pricing-toggle'>
+          {!toggleIsOn ? (
+            <p style={{ color: '#020f00' }} className='pricing-toggle-text'>
+              Billed monthly
+            </p>
+          ) : (
+            <p style={{ color: '#808780' }} className='pricing-toggle-text'>
+              Billed monthly
+            </p>
+          )}
+
+          {!toggleIsOn ? (
+            <i className='fa-solid fa-toggle-off pricing-toggle-icon' onClick={setToggleIsOnHandler}></i>
+          ) : (
+            <p
+              style={{ color: '#020f00' }}
+              className='pricing-toggle-text pricing-toggle-icon'
+              onClick={setToggleIsOnHandler}
+            >
+              <i className='fa-solid fa-toggle-on'></i>
+            </p>
+          )}
+
+          {!toggleIsOn ? (
+            <p style={{ color: '#808780' }} className='pricing-toggle-text'>
+              Billed yearly
+            </p>
+          ) : (
+            <p style={{ color: '#020f00' }} className='pricing-toggle-text'>
+              Billed yearly
+            </p>
+          )}
+        </div>
+      </div> */}
     </div>
   );
 };
