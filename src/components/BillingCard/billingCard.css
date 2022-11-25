@@ -1,3 +1,13 @@
+.billing {
+  width: 100%;
+}
+
+@media screen and (min-width: 1080px) {
+  .billing {
+    width: 520px;
+  }
+}
+
 .billing-card-title {
   font-family: 'neue-haas-grotesk-text', sans-serif;
   font-weight: 700;

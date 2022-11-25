@@ -75,77 +75,66 @@ const Landing = () => {
       <div className='features' id='features'>
         <p className='features-title'>Why Clubspace?</p>
         <div className='feature-card'>
-          <FeatureCard type='create' padding='1rem' width='300px' height='auto' />
+          <FeatureCard type='create' padding='1rem' width='300px' />
         </div>
         <div className='feature-card'>
-          <FeatureCard type='join' padding='1rem' width='300px' height='auto' />
+          <FeatureCard type='join' padding='1rem' width='300px' />
         </div>
         <div className='feature-card'>
-          <FeatureCard type='engagement' padding='1rem' width='300px' height='auto' />
+          <FeatureCard type='engagement' padding='1rem' width='300px' />
         </div>
       </div>
 
-      {/* <div className='pricing' id="pricing">
-        <div className='pricing-title-group'>
-          <p className='pricing-title'>We’ve got a pricing plan for everyone</p>
-          <p className='pricing-subtitle'>We believe clubspace should be available to all, no matter the size </p>
+      <div className='pricing' id='pricing'>
+        <div className='pricing-info-toggle-group'>
+          <div className='pricing-title-group'>
+            <p className='pricing-title'>We’ve got a pricing plan for everyone</p>
+            <p className='pricing-subtitle'>We believe clubspace should be available to all, no matter the size </p>
+          </div>
+
+          <div className='pricing-toggle'>
+            {!toggleIsOn ? (
+              <p style={{ color: '#020f00', fontWeight: 'bolder' }} className='pricing-toggle-text'>
+                Billed monthly
+              </p>
+            ) : (
+              <p style={{ color: '#808780' }} className='pricing-toggle-text'>
+                Billed monthly
+              </p>
+            )}
+
+            {!toggleIsOn ? (
+              <i className='fa-solid fa-toggle-off pricing-toggle-icon' onClick={setToggleIsOnHandler}></i>
+            ) : (
+              <p
+                style={{ color: '#020f00' }}
+                className='pricing-toggle-text pricing-toggle-icon'
+                onClick={setToggleIsOnHandler}
+              >
+                <i className='fa-solid fa-toggle-on'></i>
+              </p>
+            )}
+
+            {!toggleIsOn ? (
+              <p style={{ color: '#808780', fontWeight: 'bolder' }} className='pricing-toggle-text'>
+                Billed yearly <span className='pricing-save'>(save 36%)</span>
+              </p>
+            ) : (
+              <p style={{ color: '#020f00', fontWeight: 'bolder' }} className='pricing-toggle-text'>
+                Billed yearly <span className='pricing-save'>(save 36%)</span>
+              </p>
+            )}
+          </div>
         </div>
 
-        <div className='pricing-toggle'>
-          {!toggleIsOn ? (
-            <p style={{ color: '#020f00' }} className='pricing-toggle-text'>
-              Billed monthly
-            </p>
-          ) : (
-            <p style={{ color: '#808780' }} className='pricing-toggle-text'>
-              Billed monthly
-            </p>
-          )}
-
-          {!toggleIsOn ? (
-            <i className='fa-solid fa-toggle-off pricing-toggle-icon' onClick={setToggleIsOnHandler}></i>
-          ) : (
-            <p
-              style={{ color: '#020f00' }}
-              className='pricing-toggle-text pricing-toggle-icon'
-              onClick={setToggleIsOnHandler}
-            >
-              <i className='fa-solid fa-toggle-on'></i>
-            </p>
-          )}
-
-          {!toggleIsOn ? (
-            <p style={{ color: '#808780' }} className='pricing-toggle-text'>
-              Billed yearly
-            </p>
-          ) : (
-            <p style={{ color: '#020f00' }} className='pricing-toggle-text'>
-              Billed yearly
-            </p>
-          )}
+        <div className='pricing-cards'>
+          <BillingCard type='stater' padding='24px' />
+          <BillingCard type='growth' padding='24px' />
+          <BillingCard type='scale' padding='24px' />
         </div>
-      </div> */}
+      </div>
     </div>
   );
 };
 
 export default Landing;
-
-{
-  /* <div className='container' ref={container}></div> */
-}
-{
-  /*
-<i class="fa-solid fa-bars"></i>
-      <FeatureCard type='create' padding='2rem' width='400px' height='auto' />
-      <br />
-      <FeatureCard type='join' padding='2rem' width='400px' height='auto' />
-      <br />
-      <FeatureCard type='engagement' padding='2rem' width='400px' height='auto' />
-      <br />
-      <BillingCard type='stater' padding='24px' width='400px' height='auto' />
-      <br />
-      <BillingCard type='growth' padding='24px' width='400px' height='auto' />
-      <br />
-      <BillingCard type='scale' padding='24px' width='400px' height='auto' /> */
-}

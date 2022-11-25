@@ -1,18 +1,16 @@
 import './billingCard.css';
 
-const BillingCard = ({ type, padding, margin, width, height }) => {
+const BillingCard = ({ type, padding, margin }) => {
   const cardStyle = {
     padding,
     margin,
-    width,
-    height,
     backgroundColor: '#F3EFFB',
     borderRadius: '16px',
     border: '1px solid #E0E2E0',
   };
 
   return (
-    <div style={cardStyle}>
+    <div style={cardStyle} className='billing'>
       {type === 'stater' ? (
         <div>
           <p className='billing-card-title'>Starter</p>
