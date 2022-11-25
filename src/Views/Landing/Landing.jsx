@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from 'react';
 import Lottie from 'lottie-web';
 import { logoRectangle, application } from '../../assets';
-import { FeatureCard, BillingCard, Button } from '../../components';
+import { FeatureCard, BillingCard } from '../../components';
 import './landing.css';
 
 const Landing = () => {
