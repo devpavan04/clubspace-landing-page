@@ -4,7 +4,19 @@
 
 @media screen and (min-width: 1080px) {
   .billing {
-    width: 520px;
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1290px) {
+  .billing {
+    width: 380px;
+  }
+}
+
+@media screen and (min-width: 1540px) {
+  .billing {
+    width: 480px;
   }
 }
 

@@ -132,8 +132,8 @@
   flex-wrap: wrap;
   gap: 2rem;
   padding: 1rem;
-  border-top: 1px solid gray;
-  border-bottom: 1px solid gray;
+  border-top: 1px solid #e0e2e0;
+  border-bottom: 1px solid #e0e2e0;
   margin: 2rem 0;
 }
 
@@ -148,14 +148,14 @@
   font-weight: 800;
   line-height: 42px;
   padding: 2rem;
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #e0e2e0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .feature-card {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #e0e2e0;
 }
 
 .feature-card:nth-child(4) {
@@ -191,7 +191,7 @@
 }
 
 .pricing-subtitle {
-  color: grey;
+  color: #808780;
   line-height: 25.6px;
   margin-bottom: 1rem;
 }
@@ -215,6 +215,109 @@
   gap: 1rem;
   justify-content: center;
   align-items: center;
+}
+
+.contact-info-title {
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  line-height: 42px;
+}
+
+.contact-info-content-1 {
+  line-height: 25.6px;
+  color: #808780;
+  margin-bottom: 1rem;
+}
+
+.contact-info-content-2 {
+  line-height: 25.6px;
+  color: #808780;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  padding: 1rem;
+  border: 1px solid #e0e2e0;
+  border-radius: 10px;
+}
+
+.contact-form-title {
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+  font-weight: 800;
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+  line-height: 30px;
+  color: #5d1ebf;
+}
+
+.contact-form-content {
+  line-height: 25.6px;
+  color: #808780;
+  margin-bottom: 1rem;
+}
+
+.contact-form-input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0;
+}
+
+label {
+  padding-bottom: 0.2rem;
+  line-height: 25.6px;
+  color: #808780;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid #808780;
+  outline: none;
+}
+
+.submit-btn {
+  padding: 1rem 2rem;
+  background: #5d1ebf;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin: 1rem auto;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem !important;
+  margin: 2rem 0 0;
+  background: #f3effb;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  line-height: 26px;
+  font-family: 'neue-haas-grotesk-text', sans-serif;
+  color: #020f00;
+}
+
+.copyright {
+  padding: 1rem 0;
+  text-align: center;
 }
 
 /* TABLET */
@@ -255,6 +358,18 @@
 
   .feature-card:nth-child(3) {
     border-bottom: none;
+  }
+
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  .footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
   }
 }
 
@@ -364,7 +479,7 @@
   }
 
   .feature-card:nth-child(3) {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #808780;
   }
 }
 

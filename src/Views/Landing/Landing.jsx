@@ -14,8 +14,8 @@ const Landing = () => {
     Lottie.loadAnimation({
       container: container.current,
       renderer: 'svg',
-      loop: false,
-      autoplay: false,
+      loop: true,
+      autoplay: true,
       animationData: require('../../assets/banner.json'),
       rendererSettings: {
         preserveAspectRatio: 'xMidYMid slice',
@@ -45,7 +45,9 @@ const Landing = () => {
         <div className='header-menu-items'>
           <a href='#features'>Features</a>
           <a href='#pricing'>Pricing</a>
-          <button className='header-menu-items-btn'>Let's Talk</button>
+          <a href='#contact'>
+            <button className='header-menu-items-btn'>Let's Talk</button>
+          </a>
         </div>
       </div>
 
@@ -65,7 +67,7 @@ const Landing = () => {
         <div className='hero-background' ref={container}></div>
         <div className='hero-content'>
           <p className='hero-title'>The Ultimate Club Management App</p>
-          <button className='hero-btn'>Let's Talk</button>
+          <a href="#contact"><button className='hero-btn'>Let's Talk</button></a>
           <img src={application} alt='Clubspace Application' className='hero-image' />
         </div>
       </div>
@@ -132,6 +134,65 @@ const Landing = () => {
           <BillingCard type='growth' padding='24px' />
           <BillingCard type='scale' padding='24px' />
         </div>
+
+        <div className='contact' id='contact'>
+          <div className='contact-info'>
+            <p className='contact-info-title'>Let’s get in touch today</p>
+            <p className='contact-info-content-1'>
+              We’d love to hear from you. Whether you have a few questions about our platforms or want to schedule a
+              customized demo, we’re here to help.
+            </p>
+            <p className='contact-info-content-2'>Fill out the form, and we will reach out super fast.</p>
+          </div>
+
+          <div className='contact-form'>
+            <p className='contact-form-title'>Let’s Talk</p>
+            <div className='contact-form-content'>Please fill out the form to connect with us.</div>
+            <form>
+              <div className='contact-form-input-group'>
+                <label>Full name</label>
+                <input type='text' />
+              </div>
+              <div className='contact-form-input-group'>
+                <label>Work email</label>
+                <input type='email' />
+              </div>
+              <div className='contact-form-input-group'>
+                <label>Job title</label>
+                <input type='text' />
+              </div>
+              <div className='contact-form-input-group'>
+                <label>Organization</label>
+                <input type='text' />
+              </div>
+              <div className='contact-form-input-group'>
+                <label>Country</label>
+                <input type='text' />
+              </div>
+              <div className='contact-form-input-group'>
+                <label>How can we help?</label>
+                <input type='text' />
+              </div>
+              <button type='btn' className='submit-btn'>
+                Let’s Talk
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div className='footer'>
+        <div className='footer-logo'>
+          <img src={logoRectangle} className='header-logo' alt='Clubspace Logo' />
+        </div>
+        <div className='footer-links'>
+          <a href='#features'>Features</a>
+          <a href='#pricing'>Pricing</a>
+        </div>
+      </div>
+
+      <div className='copyright'>
+        <p>© 2022 Aurora. All rights reserved.</p>
       </div>
     </div>
   );
